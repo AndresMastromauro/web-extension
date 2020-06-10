@@ -2,5 +2,11 @@
     "manifest_version": 2,
     "author": "amastromauro",
     "name": "web-augmentation",
-    "version": "1.0"
+    "version": "1.0",
+    "content_scripts" : [{
+        "matches" : ["*://*/*"],
+        "js": [
+            "content_scripts/main.js"
+        ]
+    }]
 }
